@@ -1,10 +1,10 @@
 <template>
     <div>
-        <div className="flex h-screen justify-center items-center intro-gradient-bg text-primary select-none">
+        <div className="flex justify-center items-center h-screen text-primary select-none intro-gradient-bg">
             <div
-                class="max-w-m p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex items-center flex-col">
+                class="flex flex-col items-center border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 shadow p-6 border rounded-lg max-w-m intro-card">
                 <h1
-                    className="hover:scale-150 transition-all duration-500 text-[5rem] mobile:text-[3rem] intro-text leading-snug">
+                    className="hover:scale-110 text-[5rem] mobile:text-[3rem] leading-snug transition-all duration-500 intro-text">
                     Sample Text
                 </h1>
 

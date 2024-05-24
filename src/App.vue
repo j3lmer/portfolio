@@ -1,7 +1,7 @@
 <template>
   <div class="intro-gradient-bg">
-    <Header/>
-    <Intro/>
+    <Header />
+    <Intro />
   </div>
 </template>
 

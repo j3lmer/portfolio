@@ -1,45 +1,207 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 @font-face {
-    font-family: 'Neobold';
-    src: url('../assets/fonts/neobold.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Neobold';
+  src: url('../assets/fonts/neobold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
- .intro-text {
-    font-family: 'Neobold';
-    text-decoration: underline;
- }
 
- .intro-gradient-bg {
-    background: linear-gradient(51deg, #ba3519, #ffffff);
-    background-size: 600% 600%;
+.header-text {
+  color: white;
+}
 
-    -webkit-animation: intro-gradient-animation 0s ease infinite;
-    -moz-animation: intro-gradient-animation 0s ease infinite;
-    -o-animation: intro-gradient-animation 0s ease infinite;
-    animation: intro-gradient-animation 0s ease infinite;
+.intro-text {
+  font-family: 'Neobold';
+  text-decoration: underline;
+  -webkit-animation: color-change-text 20s infinite;
+  -moz-animation: color-change 20s infinite;
+  -o-animation: color-change-text 20s infinite;
+  -ms-animation: color-change-text 20s infinite;
+  animation: color-change-text 20s infinite;
+}
+
+.intro-card {
+  -webkit-animation: color-change-border 20s infinite;
+  -moz-animation: color-change-border 20s infinite;
+  -o-animation: color-change-border 20s infinite;
+  -ms-animation: color-change-border 20s infinite;
+  animation: color-change-border 20s infinite;
+}
+
+@-webkit-keyframes color-change-text {
+  0% {
+    color: #350a16;
+  }
+  50% {
+    color: #8ec3fa;
+  }
+  100% {
+    color: #350a16;
+  }
+}
+
+@-moz-keyframes color-change-text {
+  0% {
+    color: #350a16;
+  }
+  50% {
+    color: #8ec3fa;
+  }
+  100% {
+    color: #350a16;
+  }
+}
+
+@-ms-keyframes color-change-text {
+  0% {
+    color: #350a16;
+  }
+  50% {
+    color: #8ec3fa;
+  }
+  100% {
+    color: #350a16;
+  }
+}
+
+@-o-keyframes color-change-text {
+  0% {
+    color: #350a16;
+  }
+  50% {
+    color: #8ec3fa;
+  }
+  100% {
+    color: #350a16;
+  }
+}
+
+@keyframes color-change-text {
+  0% {
+    color: #350a16;
+  }
+  50% {
+    color: #8ec3fa;
+  }
+  100% {
+    color: #350a16;
+  }
+}
+
+@-webkit-keyframes color-change-border {
+  0% {
+    border-color: #350a16;
+  }
+  50% {
+    border-color: #8ec3fa;
+  }
+  100% {
+    border-color: #350a16;
+  }
+}
+
+@-moz-keyframes color-change-border {
+  0% {
+    border-color: #350a16;
+  }
+  50% {
+    border-color: #8ec3fa;
+  }
+  100% {
+    border-color: #350a16;
+  }
+}
+
+@-ms-keyframes color-change-border {
+  0% {
+    border-color: #350a16;
+  }
+  50% {
+    border-color: #8ec3fa;
+  }
+  100% {
+    border-color: #350a16;
+  }
+}
+
+@-o-keyframes color-change-border {
+  0% {
+    border-color: #350a16;
+  }
+  50% {
+    border-color: #8ec3fa;
+  }
+  100% {
+    border-color: #350a16;
+  }
+}
+
+@keyframes color-change-border {
+  0% {
+    border-color: #350a16;
+  }
+  50% {
+    border-color: #8ec3fa;
+  }
+  100% {
+    border-color: #350a16;
+  }
+}
+
+.intro-gradient-bg {
+  background: linear-gradient(51deg, #8ec3fa, #350a16);
+  background-size: 600% 600%;
+
+  -webkit-animation: intro-gradient-animation 20s ease-in-out infinite;
+  -moz-animation: intro-gradient-animation 20s ease-in-out infinite;
+  -o-animation: intro-gradient-animation 20s ease-in-out infinite;
+  animation: intro-gradient-animation 20s ease-in-out infinite;
 }
 
 @-webkit-keyframes intro-gradient-animation {
-    0%{background-position:0% 51%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 51%}
+  0% {
+    background-position: 0% 51%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 51%;
+  }
 }
 @-moz-keyframes intro-gradient-animation {
-    0%{background-position:0% 51%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 51%}
+  0% {
+    background-position: 0% 51%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 51%;
+  }
 }
 @-o-keyframes intro-gradient-animation {
-    0%{background-position:0% 51%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 51%}
+  0% {
+    background-position: 0% 51%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 51%;
+  }
 }
 @keyframes intro-gradient-animation {
-    0%{background-position:0% 51%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 51%}
+  0% {
+    background-position: 0% 51%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 51%;
+  }
 }
