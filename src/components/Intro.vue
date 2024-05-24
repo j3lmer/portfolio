@@ -4,11 +4,11 @@
             <div
                 class="flex flex-col items-center border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 shadow p-6 border rounded-lg max-w-m intro-card">
                 <h1
-                    className="hover:scale-110 text-[5rem] mobile:text-[3rem] leading-snug transition-all duration-500 intro-text">
+                    className="hover:scale-110 text-[5rem] mobile:text-[1rem] leading-snug transition-all duration-500 intro-text">
                     Sample Text
                 </h1>
 
-                <h1 id="subtext" className="text-[3rem] mobile:text-[2rem] intro-text">
+                <h1 id="subtext" className="text-[3rem] intro-text">
                     sample text maar dan langer
                 </h1>
             </div>
