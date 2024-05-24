@@ -1,0 +1,4 @@
+muis cursor effect
+smooth scroll 
+parallax?
+terminal animatie?

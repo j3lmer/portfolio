@@ -1,5 +1,5 @@
 <template>
-  <header class="top-0 sticky flex justify-between items-center shadow-md py-2 header header-intro">
+  <header class="top-0 sticky flex justify-between items-center shadow-md -mt-40 py-2 header header-intro">
     <!-- logo -->
     <h1 class="w-3/12 md:filter-none py-4 pl-8">
       <a href="">

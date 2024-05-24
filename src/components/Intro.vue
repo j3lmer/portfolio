@@ -1,15 +1,14 @@
 <template>
-    <div>
+    <div class="intro-gradient-bg">
         <div className="flex justify-center items-center h-screen text-primary select-none intro-gradient-bg">
             <div
                 class="flex flex-col items-center border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 shadow p-6 border rounded-lg max-w-m intro-card">
                 <h1
                     className="hover:scale-110 text-[5rem] mobile:text-[1rem] leading-snug transition-all duration-500 intro-text">
-                    Sample Text
+                    Jelmer
                 </h1>
 
                 <h1 id="subtext" className="text-[3rem] intro-text">
-                    sample text maar dan langer
                 </h1>
             </div>
         </div>
@@ -33,15 +32,15 @@ export default {
             });
 
 
-            typeWriter.typeString('subtext')
+            typeWriter.typeString('van der bij')
                 .pauseFor(2500)
                 .deleteAll()
-                .typeString('bing chilling thuis')
+                .typeString('software developer')
                 .pauseFor(2500)
-                .deleteChars(5)
-                .typeString('chillt')
+                .deleteChars(9)
+                .typeString('architect')
                 .deleteAll()
-                .typeString('nogmeer subtext')
+                .typeString('collega')
                 .pauseFor(2500)
                 .start();
         }

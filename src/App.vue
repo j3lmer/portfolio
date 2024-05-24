@@ -1,8 +1,8 @@
 <template>
-  <div class="intro-gradient-bg">
-    <Header />
-    <Intro />
-  </div>
+  
+  <Header />
+  <Intro />
+
   <Info />
 </template>
 
