@@ -9,10 +9,22 @@
   font-style: normal;
 }
 
+@font-face {
+    font-family: 'Workfont';
+    src: url('../assets/fonts/worksans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
 .header-intro {
   color: white;
   backdrop-filter: blur(10px); /* Adjust the blur intensity as needed */
   z-index: 1000
+}
+
+.main-text {
+    font-family: 'Workfont';
+    
 }
 
 .intro-text {

@@ -3,7 +3,7 @@
     <!-- logo -->
     <h1 class="w-3/12 md:filter-none py-4 pl-8">
       <a href="">
-        <font-awesome-icon :icon="['fas', 'home']" size="lg" />
+        <font-awesome-icon :icon="['fas', 'home']" size="lg" class="p-4 text-center transition hover:-translate-y-1 duration-300 delay-150 cursor-pointer active ease-in-out hover:scale-110" />
       </a>
     </h1>
 
@@ -11,27 +11,27 @@
     <nav class="max-sm:hidden font-semibold text-lg nav">
       <ul class="flex items-center">
         <li
-          class="border-green-500 p-4 border-b-2 border-opacity-0 hover:border-opacity-100 text-center hover:text-green-500 duration-200 cursor-pointer active">
-          <a href="" class="md:filter-none">item 1</a>
+          class="p-4 text-center transition hover:-translate-y-1 duration-300 delay-150 cursor-pointer active ease-in-out hover:scale-110">
+          <a href="" class="main-text">item 1</a>
         </li>
         <li
-          class="border-green-500 p-4 border-b-2 border-opacity-0 hover:border-opacity-100 text-center hover:text-green-500 duration-200 cursor-pointer">
-          <a href="" class="">item 2</a>
+          class="p-4 text-center transition hover:-translate-y-1 duration-300 delay-150 cursor-pointer ease-in-out hover:scale-110">
+          <a href="" class="main-text">item 2</a>
         </li>
         <li
-          class="border-green-500 p-4 border-b-2 border-opacity-0 hover:border-opacity-100 text-center hover:text-green-500 duration-200 cursor-pointer">
-          <a href="" class="md:filter-none">item 3</a>
+          class="p-4 text-center transition hover:-translate-y-1 duration-300 delay-150 cursor-pointer ease-in-out hover:scale-110">
+          <a href="" class="main-text">item 3</a>
         </li>
         <li
-          class="border-green-500 p-4 border-b-2 border-opacity-0 hover:border-opacity-100 text-center hover:text-green-500 duration-200 cursor-pointer">
-          <a href="" class="md:filter-none">item 4</a>
+          class="p-4 text-center transition hover:-translate-y-1 duration-300 delay-150 cursor-pointer ease-in-out hover:scale-110">
+          <a href="" class="main-text">item 4</a>
         </li>
       </ul>
     </nav>
 
     <!-- buttons --->
     <div class="flex justify-end py-4 pr-8 w-3/12">
-      <a href="">
+      <a href="" class="p-4 text-center transition hover:-translate-y-1 duration-300 delay-150 cursor-pointer active ease-in-out hover:scale-110 main-text">
         Over mij
       </a>
     </div>
