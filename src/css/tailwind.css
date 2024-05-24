@@ -1,4 +1,45 @@
-
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+@font-face {
+    font-family: 'Neobold';
+    src: url('../assets/fonts/neobold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+ .intro-text {
+    font-family: 'Neobold';
+    text-decoration: underline;
+ }
+
+ .intro-gradient-bg {
+    background: linear-gradient(51deg, #ba3519, #ffffff);
+    background-size: 600% 600%;
+
+    -webkit-animation: intro-gradient-animation 0s ease infinite;
+    -moz-animation: intro-gradient-animation 0s ease infinite;
+    -o-animation: intro-gradient-animation 0s ease infinite;
+    animation: intro-gradient-animation 0s ease infinite;
+}
+
+@-webkit-keyframes intro-gradient-animation {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@-moz-keyframes intro-gradient-animation {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@-o-keyframes intro-gradient-animation {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@keyframes intro-gradient-animation {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}

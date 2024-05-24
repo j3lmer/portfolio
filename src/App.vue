@@ -1,15 +1,13 @@
 <template>
-  <div :class="{ dark: isDarkModeActive }">
-    <div class="flex flex-row h-screen antialiased text-gray-800">
-      <Sidebar @toggle-dark-mode="isDarkModeActive = !isDarkModeActive" />
-      <Chat />
-    </div>
+  <div class="intro-gradient-bg">
+    <Header/>
+    <Intro/>
   </div>
 </template>
 
 <script>
-import Chat from "./components/Chat.vue";
-import Sidebar from "./components/Sidebar.vue";
+import Header from "./components/Header.vue";
+import Intro from "./components/Intro.vue";
 
 export default {
   name: "App",
@@ -19,8 +17,8 @@ export default {
     };
   },
   components: {
-    Chat,
-    Sidebar,
+    Header,
+    Intro
   },
 };
 </script>
