@@ -9,37 +9,27 @@
                 d="M-23.42,125.83 C172.96,-152.44 217.55,183.06 504.22,55.77 L500.00,150.00 L0.00,150.00 Z" />
         </svg>
     </div>
-    <div class="flex items-center h-screen">
-
-        <div class="flex-1 w-32"></div>
-        <div class="flex-1 items-center p-4 w-32">
-            <div class="block border-gray-200 bg-white hover:bg-gray-100 shadow p-6 border rounded-lg max-w-sm"
-                data-aos="fade-up-right">
-
-                <h5 class="mb-2 font-bold text-2xl text-gray-900 dark:text-white tracking-tight">Noteworthy
-                    technology acquisitions 2021</h5>
-                <p class="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology
-                    acquisitions of 2021 so far, in reverse chronological order.</p>
-            </div>
-        </div>
-        <div class="flex-1 items-center p-4 w-32">
-            <div class="block border-gray-200 bg-white hover:bg-gray-100 shadow p-6 border rounded-lg max-w-sm"
-                data-aos="fade-down-left">
-
-                <h5 class="mb-2 font-bold text-2xl text-gray-900 dark:text-white tracking-tight">Noteworthy
-                    technology acquisitions 2021</h5>
-                <p class="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology
-                    acquisitions of 2021 so far, in reverse chronological order.</p>
-            </div>
-        </div>
-        <div class="flex-1 w-32"></div>
-
+    <div class="flex md:flex-row flex-col items-center h-screen">
+    <div class="basis-1/4"></div>
+    <div class="p-4 w-full md:w-auto basis-1/4">
+        <FancyCard :mainText="'Hourly'" :subtext="'Eerste volledig op-aanvraag uitgevoerde project'" :iconStr="'clock'" data-aos="fade-up-right" />
     </div>
+    <div class="p-4 w-full md:w-auto basis-1/4">
+        <FancyCard :mainText="'URL Shortener'"
+            :subtext="'allemaal subtext waar je best wel dingen over kan vinden en emoties over voelen enzo'"
+            :iconStr="'heart'"
+            data-aos="fade-down-left" 
+        />
+    </div>
+    <div class="basis-1/4"></div>
+</div>
 </template>
 
 <script>
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import FancyCard from './subcomponents/FancyCard.vue';
+
 
 export default {
     name: "Info",
@@ -51,6 +41,11 @@ export default {
     methods: {
 
     },
+
+    components: {
+        FancyCard
+    },
+
 
     mounted() {
         AOS.init();

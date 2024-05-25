@@ -16,12 +16,37 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'MalumIllegitimi';
+  src: url('../assets/fonts/malumillegitimi.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OverWave';
+  src: url('../assets/fonts/overwave.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.total-wrapper {
+  cursor: none;
+}
+
 .header-intro {
   color: #d5f1ef;
   backdrop-filter: blur(10px); /* Adjust the blur intensity as needed */
   z-index: 1000;
-  /* text-shadow: 1px 1px black; */
-  filter: drop-shadow(1px 1px 1px black);
+  cursor: none;
+}
+
+a {
+  cursor: none;
+}
+
+canvas {
+  z-index: 3000;
 }
 
 .main-text {
@@ -29,8 +54,7 @@
 }
 
 .intro-text {
-  font-family: 'Neobold';
-  text-decoration: underline;
+  font-family: 'MalumIllegitimi';
   -webkit-animation: color-change-text 20s infinite;
   -moz-animation: color-change 20s infinite;
   -o-animation: color-change-text 20s infinite;
@@ -291,3 +315,4 @@
     transform: translateX(-800px) scaleX(3);
   }
 }
+

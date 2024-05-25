@@ -1,9 +1,9 @@
 <template>
-
   <Header />
-  <Intro />
-
-  <Info />
+  <div class="total-wrapper">
+    <Intro />
+    <Info />
+  </div>
 </template>
 
 <script>
@@ -15,11 +15,16 @@ import { followingDotCursor } from "cursor-effects";
 export default {
   name: "App",
   data() {
+    return {};
   },
+
   components: {
     Header,
     Intro,
     Info
+  },
+
+  methods: {
   },
 
   mounted() {
