@@ -15,6 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "aos": "^3.0.0-beta.6",
+    "cursor-effects": "^1.0.15",
     "typewriter-effect": "^2.21.0",
     "vue": "^3.2.31"
   },

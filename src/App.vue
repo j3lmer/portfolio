@@ -10,6 +10,7 @@
 import Header from "./components/Header.vue";
 import Intro from "./components/Intro.vue";
 import Info from "./components/Info.vue";
+import { followingDotCursor } from "cursor-effects";
 
 export default {
   name: "App",
@@ -20,5 +21,9 @@ export default {
     Intro,
     Info
   },
+
+  mounted() {
+    new followingDotCursor({color:'#d5f1ef'});
+  }
 };
 </script>
