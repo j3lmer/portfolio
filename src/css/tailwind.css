@@ -17,9 +17,11 @@
   }
 
 .header-intro {
-  color: white;
+  color: 		#E9DCC9;
   backdrop-filter: blur(10px); /* Adjust the blur intensity as needed */
-  z-index: 1000
+  z-index: 1000;
+  /* text-shadow: 1px 1px black; */
+  filter: drop-shadow(1px 1px 1px black)
 }
 
 .main-text {

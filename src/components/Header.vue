@@ -3,7 +3,7 @@
     <!-- logo -->
     <h1 class="w-3/12 md:filter-none py-4 pl-8">
       <a href="">
-        <font-awesome-icon :icon="['fas', 'home']" size="lg" class="p-4 text-center transition hover:-translate-y-1 duration-300 delay-150 cursor-pointer active ease-in-out hover:scale-110" />
+        <font-awesome-icon :icon="['fas', 'home']" size="lg" class="p-4 text-center transition hover:-translate-y-1 duration-300 delay-150 cursor-pointer active ease-in-out hover:scale-11"/>
       </a>
     </h1>
 

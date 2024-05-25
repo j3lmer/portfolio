@@ -2,3 +2,5 @@ muis cursor effect
 smooth scroll 
 parallax?
 terminal animatie?
+https://codepen.io/argyleink/pen/RwvOmvY
+https://michalsnik.github.io/aos/
