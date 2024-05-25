@@ -50,6 +50,9 @@ export default {
   data() {
     return {
       scrollPostition: null,
+      primaryColor: '#8ec3fa',
+      secondaryColor: '#350a16',
+      tertiaryColor: '#d5f1ef'
     }
   },
 
@@ -72,20 +75,32 @@ export default {
 
     updateScroll() {
       const scrollPosition = window.scrollY;
+      console.log(scrollPosition);
 
       if (this.isMobile()) {
         if (scrollPosition >= 772) {
-          this.updateColor('black');
-        } else if (scrollPosition <= 772) {
-          this.updateColor('#d5f1ef');
+          this.updateColor(this.primaryColor);
+        } 
+        if (scrollPosition <= 772) {
+          this.updateColor(this.tertiaryColor);
+        }
+
+        if (scrollPosition >= 1884) {
+          this.updateColor(this.secondaryColor);
         }
         return;
       } 
 
-        if (scrollPosition >= 1412) {
-          this.updateColor('black');
-        } else if (scrollPosition <= 1412) {
-          this.updateColor('#d5f1ef');
+        if (scrollPosition >= 1040) {
+          this.updateColor(this.primaryColor);
+        }
+        
+        if (scrollPosition <= 1040) {
+          this.updateColor(this.tertiaryColor);
+        }
+
+        if (scrollPosition >= 2080) {
+          this.updateColor(this.secondaryColor);
         }
     },
 

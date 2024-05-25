@@ -3,6 +3,7 @@
   <div class="total-wrapper">
     <Intro />
     <Info />
+    <Experience />
   </div>
 </template>
 
@@ -10,6 +11,7 @@
 import Header from "./components/Header.vue";
 import Intro from "./components/Intro.vue";
 import Info from "./components/Info.vue";
+import Experience from "./components/Experience.vue";
 import { followingDotCursor } from "cursor-effects";
 
 export default {
@@ -21,7 +23,8 @@ export default {
   components: {
     Header,
     Intro,
-    Info
+    Info,
+    Experience
   },
 
   methods: {
