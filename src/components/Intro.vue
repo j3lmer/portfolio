@@ -1,6 +1,7 @@
 <template>
     <div class="intro-gradient-bg">
-        <div className="flex justify-center items-center h-screen text-primary select-none intro-gradient-bg" data-aos="zoom-in">
+        <div className="flex justify-center items-center h-screen text-primary select-none intro-gradient-bg"
+            data-aos="zoom-in">
             <div
                 class="flex flex-col items-center border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 shadow p-6 border rounded-lg max-w-m intro-card">
                 <h1

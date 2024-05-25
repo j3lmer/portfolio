@@ -1,5 +1,5 @@
 <template>
-  
+
   <Header />
   <Intro />
 
@@ -23,7 +23,7 @@ export default {
   },
 
   mounted() {
-    new followingDotCursor({color:'#d5f1ef'});
+    new followingDotCursor({ color: '#d5f1ef' });
   }
 };
 </script>

@@ -3,7 +3,8 @@
     <!-- logo -->
     <h1 class="w-3/12 md:filter-none py-4 pl-8">
       <a href="">
-        <font-awesome-icon :icon="['fas', 'home']" size="lg" class="p-4 text-center transition hover:-translate-y-1 duration-300 delay-150 cursor-pointer active ease-in-out hover:scale-11"/>
+        <font-awesome-icon :icon="['fas', 'home']" size="lg"
+          class="p-4 text-center transition hover:-translate-y-1 duration-300 delay-150 cursor-pointer active ease-in-out hover:scale-11" />
       </a>
     </h1>
 
@@ -31,7 +32,8 @@
 
     <!-- buttons --->
     <div class="flex justify-end py-4 pr-8 w-3/12">
-      <a href="" class="p-4 text-center transition hover:-translate-y-1 duration-300 delay-150 cursor-pointer active ease-in-out hover:scale-110 main-text">
+      <a href=""
+        class="p-4 text-center transition hover:-translate-y-1 duration-300 delay-150 cursor-pointer active ease-in-out hover:scale-110 main-text">
         Over mij
       </a>
     </div>

@@ -11,30 +11,28 @@
     </div>
     <div class="flex items-center h-screen">
 
-            <div class="flex-1 w-32"></div>
-            <div class="flex-1 items-center p-4 w-32">
-                <div
-                    class="block border-gray-200 bg-white hover:bg-gray-100 shadow p-6 border rounded-lg max-w-sm" 
-                    data-aos="fade-up-right">
+        <div class="flex-1 w-32"></div>
+        <div class="flex-1 items-center p-4 w-32">
+            <div class="block border-gray-200 bg-white hover:bg-gray-100 shadow p-6 border rounded-lg max-w-sm"
+                data-aos="fade-up-right">
 
-                    <h5 class="mb-2 font-bold text-2xl text-gray-900 dark:text-white tracking-tight">Noteworthy
-                        technology acquisitions 2021</h5>
-                    <p class="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology
-                        acquisitions of 2021 so far, in reverse chronological order.</p>
-                </div>
+                <h5 class="mb-2 font-bold text-2xl text-gray-900 dark:text-white tracking-tight">Noteworthy
+                    technology acquisitions 2021</h5>
+                <p class="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology
+                    acquisitions of 2021 so far, in reverse chronological order.</p>
             </div>
-            <div class="flex-1 items-center p-4 w-32">
-                <div
-                    class="block border-gray-200 bg-white hover:bg-gray-100 shadow p-6 border rounded-lg max-w-sm" 
-                    data-aos="fade-down-left">
+        </div>
+        <div class="flex-1 items-center p-4 w-32">
+            <div class="block border-gray-200 bg-white hover:bg-gray-100 shadow p-6 border rounded-lg max-w-sm"
+                data-aos="fade-down-left">
 
-                    <h5 class="mb-2 font-bold text-2xl text-gray-900 dark:text-white tracking-tight">Noteworthy
-                        technology acquisitions 2021</h5>
-                    <p class="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology
-                        acquisitions of 2021 so far, in reverse chronological order.</p>
-                </div>
+                <h5 class="mb-2 font-bold text-2xl text-gray-900 dark:text-white tracking-tight">Noteworthy
+                    technology acquisitions 2021</h5>
+                <p class="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology
+                    acquisitions of 2021 so far, in reverse chronological order.</p>
             </div>
-            <div class="flex-1 w-32"></div>
+        </div>
+        <div class="flex-1 w-32"></div>
 
     </div>
 </template>
