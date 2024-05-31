@@ -11,6 +11,7 @@
                 <p class="text-gray-700">This is the second card.</p>
             </div>
             <div class="bg-white shadow-md p-6 rounded-lg">
+                <img :src="bouw7"/>
                 <h2 class="mb-2 font-bold text-xl">Card 3</h2>
                 <p class="text-gray-700">This is the third card.</p>
             </div>
@@ -22,12 +23,19 @@
 <script>
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+// import bouw7 from '../assets/images/bouw7.png';
+// import mobilox from '../assets/images/mobilox.png';
+// import allprint from '../assets/images/allprint.svg';
+
 
 
 export default {
     name: "Experience",
     data() {
         return {
+            // bouw7,
+            // mobilox,
+            // allprint,
         };
     },
 

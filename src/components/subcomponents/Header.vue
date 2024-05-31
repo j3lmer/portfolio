@@ -75,7 +75,6 @@ export default {
 
     updateScroll() {
       const scrollPosition = window.scrollY;
-      console.log(scrollPosition);
 
       if (this.isMobile()) {
         if (scrollPosition >= 772) {
@@ -86,6 +85,10 @@ export default {
         }
 
         if (scrollPosition >= 1884) {
+          this.updateColor(this.secondaryColor);
+        }
+
+        if (scrollPosition >= 1770) {
           this.updateColor(this.secondaryColor);
         }
         return;
@@ -105,11 +108,7 @@ export default {
     },
 
     isMobile() {
-      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        return true
-      } else {
-        return false
-      }
+      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
     }
   }
 };

@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import Header from "./components/Header.vue";
+import Header from "./components/subcomponents/Header.vue";
 import Intro from "./components/Intro.vue";
 import Info from "./components/Info.vue";
 import Experience from "./components/Experience.vue";
@@ -28,10 +28,15 @@ export default {
   },
 
   methods: {
+    isMobile() {
+      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  }
   },
 
   mounted() {
-    new followingDotCursor({ color: '#d5f1ef' });
+    if (!this.isMobile()) {
+      new followingDotCursor({ color: '#d5f1ef' });
+    } 
   }
 };
 </script>
