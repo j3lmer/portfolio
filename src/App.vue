@@ -36,7 +36,7 @@ export default {
   mounted() {
     if (!this.isMobile()) {
       new followingDotCursor({ color: '#d5f1ef' });
-    } 
+    }
   }
 };
 </script>
