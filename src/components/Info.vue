@@ -14,13 +14,16 @@
             <div class="basis-1/4"></div>
             <div class="p-4 w-full md:w-auto basis-1/4">
                 <FancyCard :mainText="'Hourly'" :subtext="'Eerste volledig op-aanvraag uitgevoerde project'"
-                    :iconStr="'clock'" data-aos="fade-up-right" />
+					url="'https://github.com/j3lmer/URL-shortener'"
+					:iconStr="'clock'" data-aos="fade-up-right" />
             </div>
             <div class="p-4 w-full md:w-auto basis-1/4">
                 <FancyCard :mainText="'URL Shortener'"
-                    :subtext="'allemaal subtext waar je best wel dingen over kan vinden en emoties over voelen enzo'"
-                    :iconStr="'heart'" data-aos="fade-down-left" />
-            </div>
+                    :subtext="'URL-shortener gemaakt binnen 4 dagen'"
+					url="https://github.com/j3lmer/hourly"
+                    :iconStr="'heart'" data-aos="fade-down-left"
+				/>
+			 </div>
             <div class="basis-1/4"></div>
         </div>
     </div>

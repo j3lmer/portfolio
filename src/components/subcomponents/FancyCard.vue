@@ -1,5 +1,5 @@
 <template>
-    <a href="#" class="block relative h-64 sm:h-80 lg:h-96 group" >
+	<a :href="sanitizedUrl" class="block relative h-64 sm:h-80 lg:h-96 group" >
         <span class="absolute inset-0 border-2 border-black border-dashed"></span>
 
         <div
@@ -34,7 +34,14 @@ export default {
         mainText: String,
         subtext: String,
         iconStr: String,
+		url: String,
     },
+
+	computed: {
+		sanitizedUrl() {
+		  return this.url.replace(/^'|'$/g, '');
+		},
+	},
 
     data() {
         return {};
@@ -43,8 +50,9 @@ export default {
     beforeCreate() {
 
     },
+
     methods: {},
-    
+
     beforeCreate() {
         library.add(faClock, faHeart);
     },
