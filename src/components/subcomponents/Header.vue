@@ -12,17 +12,20 @@
     <nav class="max-sm:hidden font-semibold text-lg nav">
       <ul class="flex items-center">
         <li
-          class="p-4 text-center transition hover:-translate-y-1 duration-300 delay-150 active ease-in-out hover:scale-110">
-          <a href="" class="main-text">item 1</a>
+          class="p-4 text-center transition hover:-translate-y-1 duration-300 delay-150 active ease-in-out hover:scale-110 no-select">
+          <a href="" class="main-text">Home</a>
         </li>
-        <li class="p-4 text-center transition hover:-translate-y-1 duration-300 delay-150 ease-in-out hover:scale-110">
-          <a href="" class="main-text">item 2</a>
+        <li
+          class="p-4 text-center transition hover:-translate-y-1 duration-300 delay-150 ease-in-out hover:scale-110 no-select">
+          <a href="" class="main-text">Projecten</a>
         </li>
-        <li class="p-4 text-center transition hover:-translate-y-1 duration-300 delay-150 ease-in-out hover:scale-110">
-          <a href="" class="main-text">item 3</a>
+        <li
+          class="p-4 text-center transition hover:-translate-y-1 duration-300 delay-150 ease-in-out hover:scale-110 no-select">
+          <a href="" class="main-text">Ervaringen</a>
         </li>
-        <li class="p-4 text-center transition hover:-translate-y-1 duration-300 delay-150 ease-in-out hover:scale-110">
-          <a href="" class="main-text">item 4</a>
+        <li
+          class="p-4 text-center transition hover:-translate-y-1 duration-300 delay-150 ease-in-out hover:scale-110 no-select">
+          <a href="" class="main-text">Software</a>
         </li>
       </ul>
     </nav>
@@ -79,7 +82,7 @@ export default {
       if (this.isMobile()) {
         if (scrollPosition >= 772) {
           this.updateColor(this.primaryColor);
-        } 
+        }
         if (scrollPosition <= 772) {
           this.updateColor(this.tertiaryColor);
         }
@@ -92,19 +95,19 @@ export default {
           this.updateColor(this.secondaryColor);
         }
         return;
-      } 
+      }
 
-        if (scrollPosition >= 1040) {
-          this.updateColor(this.primaryColor);
-        }
-        
-        if (scrollPosition <= 1040) {
-          this.updateColor(this.tertiaryColor);
-        }
+      if (scrollPosition >= 1040) {
+        this.updateColor(this.primaryColor);
+      }
 
-        if (scrollPosition >= 2080) {
-          this.updateColor(this.secondaryColor);
-        }
+      if (scrollPosition <= 1040) {
+        this.updateColor(this.tertiaryColor);
+      }
+
+      if (scrollPosition >= 2080) {
+        this.updateColor(this.secondaryColor);
+      }
     },
 
     isMobile() {
