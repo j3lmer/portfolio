@@ -10,6 +10,13 @@
 }
 
 @font-face {
+  font-family: 'Plante';
+  src: url('../assets/fonts/plante.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Workfont';
   src: url('../assets/fonts/worksans.ttf') format('truetype');
   font-weight: normal;
@@ -68,6 +75,13 @@ canvas {
   -o-animation: color-change-border 20s infinite;
   -ms-animation: color-change-border 20s infinite;
   animation: color-change-border 20s infinite;
+}
+
+.experience-text {
+  font-family: 'Plante';
+  font-size: 55px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 @-webkit-keyframes color-change-text {
