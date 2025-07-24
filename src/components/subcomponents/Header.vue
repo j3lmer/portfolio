@@ -34,7 +34,7 @@
     <div class="flex justify-end py-4 pr-8 w-3/12">
       <a href=""
         class="p-4 text-center transition hover:-translate-y-1 duration-300 delay-150 active ease-in-out hover:scale-110 main-text">
-        Over mij
+        Contact
       </a>
     </div>
   </header>

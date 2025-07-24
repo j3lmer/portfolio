@@ -14,7 +14,15 @@ module.exports = {
       mobilox: '#F5821A',
       allprint: '#B3B6B7',
     },
-    extend: {},
+    extend: {
+      spacing: {
+        '20': '10rem',
+        '72': '18rem',
+        '84': '21rem',
+        '96': '24rem',
+        '128': '32rem',
+      },
+    },
   },
   variants: {
     extend: {},

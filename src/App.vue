@@ -1,9 +1,11 @@
 <template>
-  <Header />
-  <div class="total-wrapper">
-    <Intro />
-    <Info />
-    <Experience />
+  <div :class="{'is-debug': isDebug }">
+    <Header />
+    <div class="total-wrapper">
+      <Intro />
+      <Info />
+      <Experience />
+    </div>
   </div>
 </template>
 
@@ -17,7 +19,9 @@ import { followingDotCursor } from "cursor-effects";
 export default {
   name: "App",
   data() {
-    return {};
+    return {
+      isDebug: process.env.VUE_APP_IS_DEBUG
+    };
   },
 
   components: {
@@ -35,7 +39,7 @@ export default {
 
   mounted() {
     if (!this.isMobile()) {
-      new followingDotCursor({ color: '#d5f1ef' });
+//      new followingDotCursor({ color: '#d5f1ef' });
     }
   }
 };
