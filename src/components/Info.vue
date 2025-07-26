@@ -83,11 +83,31 @@
       <div>
         <h2 class="text-2xl font-semibold mb-4">Projectbeelden & Inspiratie</h2>
         <div class="bg-gray-100 rounded-xl shadow p-6">
-          <!-- Placeholder carousel -->
-          <p class="text-gray-500 italic">[Hier komt een carousel of lightbox met afbeeldingen van projecten]</p>
+          <VueFlux :options="options" :rscs="rscs" :transitions="transitions" ref="$vueFlux"
+            :current-index="currentIndex">
+
+            <template #preloader="preloaderProps">
+              <FluxPreloader v-bind="preloaderProps" />
+            </template>
+
+            <template #caption="captionProps">
+              <FluxCaption v-bind="captionProps" />
+            </template>
+
+            <template #controls="controlsProps">
+              <FluxControls v-bind="controlsProps" />
+            </template>
+
+            <template #pagination="paginationProps">
+              <FluxPagination v-bind="paginationProps" />
+            </template>
+
+            <template #index="indexProps">
+              <FluxIndex v-bind="indexProps" />
+            </template>
+          </VueFlux>
         </div>
       </div>
-
     </div>
   </div>
 </template>
@@ -96,14 +116,56 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import FancyCard from './subcomponents/FancyCard.vue';
+import { ref, shallowReactive } from 'vue';
+import {
+  VueFlux,
+  FluxCaption,
+  FluxControls,
+  FluxIndex,
+  FluxPagination,
+  FluxPreloader,
+  Img,
+  Book,
+  Camera,
+  Fall,
+} from 'vue-flux';
 
 export default {
   name: "Info",
   components: {
     FancyCard,
+    VueFlux,
+    FluxControls,
   },
   data() {
+    const $vueFlux = ref();
+    const currentIndex = ref();
+    const options = shallowReactive({
+      autoplay: true,
+      allowFullscreen: true,
+      bindKeys: true,
+      enableGestures: true,
+      infinite: true,
+      lazyLoad: true,
+    });
+
+    const rscs = shallowReactive([
+      new Img('https://www.vanmustotgras.nl/wp-content/uploads/2021/04/De-das-1.jpg'),
+      new Img('https://www.onzenatuur.be/media/cache/fb_og_image/uploads/media/5f50abd096dd0/das-2.jpg')
+    ]);
+
+    const transitions = shallowReactive([
+      Camera,
+      Book,
+      Fall,
+    ]);
+
     return {
+      $vueFlux,
+      options,
+      rscs,
+      transitions,
+      currentIndex
     }
   },
   mounted() {
