@@ -73,16 +73,18 @@
       <div class="text-gray-600 text-md max-w-xl mx-auto">
         <p>
           Ik begin vaak met veel enthousiasme aan nieuwe projecten — soms raken ze af, soms blijven ze in conceptfase
-          hangen.
-          Desondanks leer ik van elk project iets nieuws. Buiten mijn werk run ik ook een homeserver
-          met Docker-containers omdat ik er plezier uit haal EN het handig vind om zelfvoorzienend te zijn.
+          hangen.<br />
+          Desondanks leer ik van elk project iets nieuws.
+          <br class="my-2" />
+          Buiten mijn werk run ik ook een homeserver
+          met Docker-containers omdat ik er plezier uit haal EN het handig vind om zelfvoorzienend te zijn.<br />
         </p>
       </div>
 
       <!-- Afbeeldingen/carousel -->
       <div>
         <h2 class="text-2xl font-semibold mb-4">Projectbeelden & Inspiratie</h2>
-        <div class="bg-gray-100 rounded-xl shadow p-6">
+        <div class="bg-gray-100 rounded-xl shadow-xl p-6">
           <VueFlux :options="options" :rscs="rscs" :transitions="transitions" ref="$vueFlux"
             :current-index="currentIndex">
 
