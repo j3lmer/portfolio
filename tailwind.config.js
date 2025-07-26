@@ -13,6 +13,9 @@ module.exports = {
       bouw7: '#F3EB5E',
       mobilox: '#F5821A',
       allprint: '#B3B6B7',
+      tertiary: '#4663ac',
+      tertiarycontrast: '#FFFFFF',
+      subtext: '#686D76'
     },
     extend: {
       spacing: {
