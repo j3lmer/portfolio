@@ -25,19 +25,96 @@
       </div>
 
       <!-- Projecten -->
-      <div class="grid md:grid-cols-2 gap-6">
+      <div class="grid md:grid-cols-3 gap-6">
         <FancyCard
           :mainText="'Hourly'"
           :subtext="'Mijn eerste project volledig op aanvraag uitgevoerd: urenregistratie met exportfunctie.'"
+          :tags="'Symfony, Bootstrap'"
           url="https://github.com/j3lmer/hourly"
           :iconStr="'clock'"
+          :iconStyle="'fas'"
           data-aos="fade-up-right"
         />
         <FancyCard
           :mainText="'URL Shortener'"
           :subtext="'Een simpele, werkende linkverkorter gebouwd in slechts 4 dagen.'"
+          :tags="'Meteor, Bootstrap'"
           url="https://github.com/j3lmer/URL-shortener"
-          :iconStr="'link'"
+          :iconStr="'tree'"
+          data-aos="fade-down-left"
+        />
+        <FancyCard
+          :mainText="'TopdownKiller'"
+          :subtext="'Keuzedeel games Friesland College / Firda.'"
+          :tags="'Unity, C#'"
+          url="https://github.com/j3lmer/TopdownKiller"
+          :iconStr="'gamepad'"
+          :iconStyle="'fas'"
+          data-aos="fade-up-right"
+        />
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <FancyCard
+          :mainText="'Deze portfolio!'"
+          :subtext="'Deze portfolio, gemaakt met vue en liefde'"
+          :tags="'Vue, Tailwind'"
+          url="https://github.com/j3lmer/portfolio"
+          :iconStr="'gamepad'"
+          data-aos="fade-down-left"
+        />
+        <FancyCard
+          :mainText="'Suus-blog'"
+          :subtext="'[WIP] blog die ik schrijf voor mijn vriendin'"
+          :tags="'Symfony, Vue, Typescript'"
+          url="https://github.com/j3lmer/tailwind-blog-suus"
+          :iconStr="'pen-nib'"
+          :iconStyle="'fas'"
+          data-aos="fade-up-right"
+        />
+        <FancyCard
+          :mainText="'bedb'"
+          :subtext="'Game review aggregator, voorbereidende opdracht voor mijn PVB bij Friesland College / Firda'"
+          :tags="'Symfony, Vue, Typescript, Docker'"
+          url="https://github.com/j3lmer/bedb"
+          :iconStyle="'fas'"
+          :iconStr="'book'"
+          data-aos="fade-down-left"
+        />
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <FancyCard
+          :mainText="'json-editor'"
+          :subtext="'TUI Json editor, niet voor gebruik, maar om te leren'"
+          :tags="'Rust, Ratatui, TUI'"
+          url="https://github.com/j3lmer/json-editor"
+          :iconStr="'file'"
+          data-aos="fade-up-right"
+        />
+        <FancyCard
+          :mainText="'MJBot'"
+          :subtext="'[WIP] Een maat en ik bouwen een oplossing voor spotify linkjes in chatapps'"
+          :tags="'Symfony, Vue, Docker'"
+          url="https://github.com/j3lmer/mjbot"
+          :iconStr="'cog'"
+          data-aos="fade-down-left"
+        />
+        <FancyCard
+          :mainText="'Corrado-database revive'"
+          :subtext="'[WIP] Hier geen repo link, nieuw leven blazen in een ouder project, samen met mijn broer en beste maat'"
+          :tags="'Symfony, Tailwind, Docker'"
+          url="https://corrado-database.nl"
+          :iconStr="'car'"
+          data-aos="fade-up-right"
+        />
+      </div>
+      <div class="grid md:grid-cols-1 gap-6">
+        <FancyCard
+          :mainText="'Suus-game-hub'"
+          :subtext="'[WIP] Game hub met verscheidene TUI games voor mijn vriendin'"
+          :tags="'Rust, Ratatui, TUI'"
+          url="https://github.com/j3lmer/suus-game-hub"
+          :iconStr="'heart'"
           data-aos="fade-down-left"
         />
       </div>
