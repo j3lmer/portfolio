@@ -16,6 +16,7 @@
   font-style: normal;
 }
 
+
 @font-face {
   font-family: 'Workfont';
   src: url('../assets/fonts/worksans.ttf') format('truetype');
@@ -68,6 +69,7 @@ canvas {
   font-family: 'Workfont';
 }
 
+
 .intro-text {
   font-family: 'MalumIllegitimi';
   -webkit-animation: color-change-text 20s infinite;
@@ -94,6 +96,7 @@ canvas {
 
 .experience-container {
   box-shadow: inset 0px 20px 40px 40px #FFFFFF;
+  height: 60vh;
 }
 
 .experience-mobilox {
@@ -109,10 +112,6 @@ canvas {
     /* outer left magenta */
     1px 0 10px #F05920;
 }
-
-
-/*92cafc*/
-
 
 .experience-bouw7 {
   box-shadow:

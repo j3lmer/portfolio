@@ -16,7 +16,7 @@
     <div class="min-h-screen py-16 px-4 max-w-6xl mx-auto text-center space-y-16">
 
       <!-- Intro -->
-      <div class="space-y-4">
+      <div class="space-y-4 inconslata">
         <h1 class="text-4xl font-bold">Dit ben ik!</h1>
         <p class="text-lg text-gray-700">
           Hier vind je een selectie van projecten die ik (bijna allemaal) heb gemaakt tijdens mijn studie.
@@ -71,7 +71,7 @@
 
       <!-- Persoonlijke noot -->
       <div class="text-gray-600 text-md max-w-xl mx-auto">
-        <p>
+        <p class="inconslata">
           Ik begin vaak met veel enthousiasme aan nieuwe projecten — soms raken ze af, soms blijven ze in conceptfase
           hangen.<br />
           Desondanks leer ik van elk project iets nieuws.
